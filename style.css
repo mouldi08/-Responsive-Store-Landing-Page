@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Tangerine', serif;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+}
+
+.header-actions a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-actions a:hover {
+  color: #0056b3;
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 5px;
+    background-color: transparent;
+}
+.box{
+    display: flex;
+    width: 130px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box:hover{
+    background-color: yellow;
+    border-radius: 10px;
+}
+.box1{ background:url('https://static.vecteezy.com/system/resources/thumbnails/026/951/412/small/men-suit-for-business-working-concept-businessman-suit-background-generative-ai-free-photo.jpeg');
+       background-size: cover;
+       background-position: center;
+       border-radius: 10px;
+}
+.box2{ background:url('https://images.stockcake.com/public/0/3/5/035a176c-07f9-4c80-8310-c9f328a3d6c3_large/fashion-store-interior-stockcake.jpg');
+       background-size: cover;
+       background-position: center;
+       border-radius: 10px;
+}
+.box3{ background:url('https://i.pinimg.com/736x/48/02/22/480222a60a378ff86aac365251211b4a.jpg');
+       background-size: cover;
+       background-position: center;
+       border-radius: 10px;
+}
+.box4{ background:url('https://t3.ftcdn.net/jpg/02/96/19/88/360_F_296198884_iJvPPEL8ACqJETMHn6bs4cNmHv54MGMv.jpg');
+       background-size: cover;
+       background-position: center;
+       border-radius: 10px;
+}
+.container div{
+    flex-grow: 1;
+}
+.container div:hover{
+    flex-grow: 10;
+}
+.image{
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+}
+.image2{
+    height: 190px;
+    width: 190px;
+    justify-self: center;
+    align-self: center;
+}
+.text1{
+  text-align: center;
+  font-family: italic;
+  color: white;
+}
+
+/* Hover text */
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+/* Show text on hover */
+.box:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+product-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-section h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  font-family: 'Tangerine', serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.shop-btn {
+  display: inline-block;
+  background-color: #0077ff;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+}
+
+.shop-btn:hover {
+  background-color: #005bcc;
+}
+
+.site-footer {
+  background-color: rgba(77, 77, 77,0.05) 0%;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container h3 {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+@media (max-width: 400px) {
+  .box {
+    padding: 1rem;
+  }
+}
